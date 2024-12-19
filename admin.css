@@ -1,4 +1,8 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -9,7 +13,11 @@ body {
     overflow: hidden;
 }
 
-.container { display: flex; width: 100%; flex-grow: 1; }
+.container { 
+    display: flex; 
+    width: 100%; 
+    flex-grow: 1; 
+}
 
 .sidebar {
     width: 250px;
@@ -55,7 +63,9 @@ body {
     border-radius: 4px;
 }
 
-.sidebar ul li a:hover { background-color: #444; }
+.sidebar ul li a:hover { 
+    background-color: #444; 
+}
 
 .subgroup {
     list-style-type: none;
@@ -69,7 +79,9 @@ body {
     padding: 6px 10px;
 }
 
-.subgroup li a:hover { background-color: #555; }
+.subgroup li a:hover { 
+    background-color: #555; 
+}
 
 .sidebar ul li:hover > .subgroup {
     display: block;
@@ -92,7 +104,11 @@ body {
     margin-bottom: 10px;
 }
 
-h1 { font-size: 20px; margin-left: 5%; color: #444; }
+h1 { 
+    font-size: 20px; 
+    margin-left: 5%; 
+    color: #444; 
+}
 
 .search-bar {
     padding: 8px;
@@ -132,17 +148,43 @@ tr:hover { background-color: #f1f1f1; }
     text-transform: capitalize;
 }
 
-.delivery-status.completed { background-color: #66cc66; color: #fff; }
-.delivery-status.out-for-delivery { background-color: #ffb84d; color: #fff; }
-.delivery-status.awaiting-pickup { background-color: #ffcc66; color: #fff; }
-.delivery-status.cancelled { background-color: #ff6666; color: #fff; }
-
-@media (max-width: 768px) {
-    .container { flex-direction: column; }
-    .sidebar { width: 100%; padding: 10px; }
-    .main-content { padding: 10px; margin-left: 0; }
-    .search-bar { margin-bottom: 15px; }
+.delivery-status.completed { 
+    background-color: #66cc66; 
+    color: #fff; 
+}
+.delivery-status.out-for-delivery { 
+    background-color: #ffb84d; 
+    color: #fff; 
+}
+.delivery-status.awaiting-pickup { 
+    background-color: #ffcc66; 
+    color: #fff; 
+}
+.delivery-status.cancelled { 
+    background-color: #ff6666; 
+    color: #fff; 
 }
 
-th.ascending::after { content: " ↑"; }
-th.descending::after { content: " ↓"; }
+@media (max-width: 768px) {
+    .container { 
+        flex-direction: column; 
+    }
+    .sidebar { 
+        width: 100%; 
+        padding: 10px; 
+    }
+    .main-content { 
+        padding: 10px; 
+        margin-left: 0; 
+    }
+    .search-bar { 
+        margin-bottom: 15px; 
+    }
+}
+
+th.ascending::after { 
+    content: " ↑"; 
+}
+th.descending::after { 
+    content: " ↓"; 
+}
