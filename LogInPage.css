@@ -1,0 +1,107 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white; /* Light background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  /* Header Styling */
+  .header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .header h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(42, 54, 99); /* Deep blue */
+    margin: 0;
+  }
+  
+  /* Login Container Styling */
+  .login-container {
+    background-color: rgb(216, 219, 189); /* Light grayish green */
+    border-radius: 12px;
+    width: 350px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .login-container h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: rgb(42, 54, 99); 
+    margin-bottom: 20px;
+  }
+  
+  
+  .input-group {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-align: left;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(181, 159, 120); 
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #fff;
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    border-color: rgb(42, 54, 99); 
+  }
+  
+  
+  .login-btn {
+    background: linear-gradient(90deg, rgb(42, 54, 99), rgb(181, 159, 120)); /* Gradient from deep blue to warm brown */
+    color: rgb(250, 246, 227); 
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+  
+  .login-btn:hover {
+    opacity: 0.9;
+  }
+  
+  
+  .footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: rgb(42, 54, 99); /* Deep blue for footer text */
+  }
+  
+  .footer a {
+    color: rgb(42, 54, 99);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  

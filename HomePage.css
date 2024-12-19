@@ -1,0 +1,235 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-image {
+  width: 40px;
+  height: 40px;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  background: url('hero-bg.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 4rem 1rem;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero .shop-now {
+  padding: 0.7rem 1.5rem;
+  margin-top: 10px;
+  background-color: #00aaff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* New Arrivals Section */
+.new-arrivals {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.new-arrivals h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.products {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap; /* Allow products to wrap on smaller screens */
+}
+
+.product-card {
+  text-align: center;
+  background-color: #f0f0f0;
+  width: 25%; /* Set initial width to 25% (smaller than previous 30%) */
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, width 0.5s ease, opacity 0.3s ease;
+  padding: 10px;
+  margin-bottom: 20px; /* Add margin at the bottom for spacing */
+}
+
+/* Product Image Styling */
+.product-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: filter 0.3s ease, opacity 0.3s ease; /* Smooth transition for blur effect */
+}
+
+/* Initially hide the text */
+.product-text,
+.product-card span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0; /* Initially hide text and price */
+  transition: opacity 0.3s ease;
+}
+
+.product-text {
+  top: 30%; /* Position the product text higher */
+  font-size: 1.2rem;
+  color: black;
+}
+
+.product-card span {
+  top: 60%; /* Position the price lower */
+  font-size: 1.5rem;
+  color: black;
+}
+
+/* Show text and price when the card is hovered */
+.product-card:hover .product-text,
+.product-card:hover span {
+  opacity: 1; /* Show text and price */
+}
+
+/* Blur effect and opacity on hover (image stays visible with blur) */
+.product-card:hover img {
+  filter: blur(5px); /* Apply blur effect */
+  opacity: 0.6; /* Keep image visible but slightly faded */
+}
+
+/* Hover behavior for the product card */
+.product-card:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  width: 30%; /* Increase the width to 30% on hover (slightly larger than initial) */
+}
+
+/* Gallery Section */
+.gallery {
+  padding: 2rem;
+  background-color: #fefefe;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.gallery-grid img {
+  max-width: 30%;
+  border-radius: 8px;
+}
+
+/* FAQ Section */
+.faq {
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer Styling */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #111;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .product-card {
+    width: 35%; /* Adjust width to 35% for medium to large screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 45%; /* Set product card to 45% width for tablet screens */
+  }
+  .products {
+    flex-direction: column; /* Stack the products vertically */
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 90%; /* Make product card take up 90% width on mobile screens */
+  }
+  .product-text {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+  .product-card span {
+    font-size: 1.2rem; /* Adjust price font size for smaller screens */
+  }
+}
