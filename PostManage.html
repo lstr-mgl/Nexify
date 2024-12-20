@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PostManage</title>
+  <link rel="stylesheet" href="PostManage.css">
+</head>
+<body>
+  <header>
+    <h1>PostManage</h1>
+  </header>
+  <aside id="sidebar">
+    <h2>Navigation</h2>
+    <ul>
+      <li><a href="#">My Posts</a></li>
+      <li><a href="#">Drafts</a></li>
+    </ul>
+  </aside>
+  <main id="content">
+    <div class="table-container">
+      <h2>My Posts Repository</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Availability</th>
+            <th>Submitted at</th>
+            <th>Created at</th>
+            <th>Options</th>
+          </tr>
+        </thead>
+        <tbody id="posts-table">
+          <!-- Rows will be dynamically added here -->
+        </tbody>
+      </table>
+      <a class="create-btn" href="#">Create a New Post</a>
+    </div>
+    <div class="footer">
+      
+    </div>
+  </main>
+  <script src="PostManage.js"></script>
+</body>
+</html>

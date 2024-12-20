@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  header {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  #sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding: 20px;
+  }
+  
+  #sidebar h2 {
+    font-size: 1.2em;
+    margin-top: 0;
+  }
+  
+  #sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #sidebar ul li {
+    margin: 15px 0;
+  }
+  
+  #sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+  }
+  
+  #content {
+    margin-left: 270px;
+    padding: 20px;
+  }
+  
+  .table-container {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .status-No Stocks {
+    color: red;
+  }
+  
+  .status-configuring {
+    color: orange;
+  }
+  
+  .status-Available {
+    color: green;
+  }
+  
+  .options-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .options-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .create-btn {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .create-btn:hover {
+    background-color: #d35400;
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #888;
+  }
+  
